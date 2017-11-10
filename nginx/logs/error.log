@@ -1,0 +1,134 @@
+2017/11/08 20:04:05 [error] 9210#0: *1 open() "/usr/local/gateway/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.1.160, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.1.152", referrer: "http://192.168.1.152/"
+2017/11/08 20:04:25 [notice] 9211#0: signal process started
+2017/11/09 12:15:06 [error] 2374#0: *4 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.221:16010: connection refused, context: ngx.timer
+2017/11/09 12:15:06 [error] 2374#0: *2 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.170:50070: connection refused, context: ngx.timer
+2017/11/09 12:15:06 [error] 2374#0: *2 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.171:50070: connection refused, context: ngx.timer
+2017/11/09 12:15:06 [error] 2374#0: *4 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.222:16010: connection refused, context: ngx.timer
+2017/11/09 12:15:08 [error] 2374#0: *10 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.221:16010: connection refused, context: ngx.timer
+2017/11/09 12:15:08 [error] 2374#0: *8 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.170:50070: connection refused, context: ngx.timer
+2017/11/09 12:15:08 [error] 2374#0: *10 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.222:16010: connection refused, context: ngx.timer
+2017/11/09 12:15:08 [error] 2374#0: *8 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.171:50070: connection refused, context: ngx.timer
+2017/11/09 12:15:10 [error] 2374#0: *14 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.221:16010: connection refused, context: ngx.timer
+2017/11/09 12:15:10 [error] 2374#0: *16 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.170:50070: connection refused, context: ngx.timer
+2017/11/09 12:15:10 [error] 2374#0: *14 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.222:16010: connection refused, context: ngx.timer
+2017/11/09 12:15:10 [error] 2374#0: *16 [lua] healthcheck.lua:59: errlog(): healthcheck: failed to connect to 192.168.1.171:50070: connection refused, context: ngx.timer
+2017/11/09 12:31:36 [emerg] 2446#0: host not found in upstream "live_node1" in /usr/local/gateway/nginx/conf/nginx.conf:211
+2017/11/09 12:35:41 [error] 2454#0: *1 failed to run set_by_lua*: set_by_lua:3: attempt to index local 'file1' (a nil value)
+stack traceback:
+	set_by_lua:3: in function <set_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 12:35:41 [error] 2454#0: *1 failed to run header_filter_by_lua*: header_filter_by_lua:8: module 'lua_ip' not found:
+	no field package.preload['lua_ip']
+	no file '/usr/local/gateway/site/lualib/lua_ip.lua'
+	no file '/usr/local/gateway/site/lualib/lua_ip/init.lua'
+	no file '/usr/local/gateway/lualib/lua_ip.lua'
+	no file '/usr/local/gateway/lualib/lua_ip/init.lua'
+	no file './lua_ip.lua'
+	no file '/usr/local/gateway/luajit/share/luajit-2.1.0-beta2/lua_ip.lua'
+	no file '/usr/local/share/lua/5.1/lua_ip.lua'
+	no file '/usr/local/share/lua/5.1/lua_ip/init.lua'
+	no file '/usr/local/gateway/luajit/share/lua/5.1/lua_ip.lua'
+	no file '/usr/local/gateway/luajit/share/lua/5.1/lua_ip/init.lua'
+	no file '/usr/local/gateway/site/lualib/lua_ip.so'
+	no file '/usr/local/gateway/lualib/lua_ip.so'
+	no file './lua_ip.so'
+	no file '/usr/local/lib/lua/5.1/lua_ip.so'
+	no file '/usr/local/gateway/luajit/lib/lua/5.1/lua_ip.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	header_filter_by_lua:8: in function <header_filter_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 12:36:04 [error] 2454#0: *2 failed to run set_by_lua*: set_by_lua:3: attempt to index local 'file1' (a nil value)
+stack traceback:
+	set_by_lua:3: in function <set_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 12:36:04 [error] 2454#0: *2 failed to run header_filter_by_lua*: header_filter_by_lua:8: module 'lua_ip' not found:
+	no field package.preload['lua_ip']
+	no file '/usr/local/gateway/site/lualib/lua_ip.lua'
+	no file '/usr/local/gateway/site/lualib/lua_ip/init.lua'
+	no file '/usr/local/gateway/lualib/lua_ip.lua'
+	no file '/usr/local/gateway/lualib/lua_ip/init.lua'
+	no file './lua_ip.lua'
+	no file '/usr/local/gateway/luajit/share/luajit-2.1.0-beta2/lua_ip.lua'
+	no file '/usr/local/share/lua/5.1/lua_ip.lua'
+	no file '/usr/local/share/lua/5.1/lua_ip/init.lua'
+	no file '/usr/local/gateway/luajit/share/lua/5.1/lua_ip.lua'
+	no file '/usr/local/gateway/luajit/share/lua/5.1/lua_ip/init.lua'
+	no file '/usr/local/gateway/site/lualib/lua_ip.so'
+	no file '/usr/local/gateway/lualib/lua_ip.so'
+	no file './lua_ip.so'
+	no file '/usr/local/lib/lua/5.1/lua_ip.so'
+	no file '/usr/local/gateway/luajit/lib/lua/5.1/lua_ip.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	header_filter_by_lua:8: in function <header_filter_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 14:17:16 [error] 2454#0: *3 failed to run set_by_lua*: set_by_lua:3: attempt to index local 'file1' (a nil value)
+stack traceback:
+	set_by_lua:3: in function <set_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 14:17:16 [error] 2454#0: *3 failed to run header_filter_by_lua*: header_filter_by_lua:8: module 'lua_ip' not found:
+	no field package.preload['lua_ip']
+	no file '/usr/local/gateway/site/lualib/lua_ip.lua'
+	no file '/usr/local/gateway/site/lualib/lua_ip/init.lua'
+	no file '/usr/local/gateway/lualib/lua_ip.lua'
+	no file '/usr/local/gateway/lualib/lua_ip/init.lua'
+	no file './lua_ip.lua'
+	no file '/usr/local/gateway/luajit/share/luajit-2.1.0-beta2/lua_ip.lua'
+	no file '/usr/local/share/lua/5.1/lua_ip.lua'
+	no file '/usr/local/share/lua/5.1/lua_ip/init.lua'
+	no file '/usr/local/gateway/luajit/share/lua/5.1/lua_ip.lua'
+	no file '/usr/local/gateway/luajit/share/lua/5.1/lua_ip/init.lua'
+	no file '/usr/local/gateway/site/lualib/lua_ip.so'
+	no file '/usr/local/gateway/lualib/lua_ip.so'
+	no file './lua_ip.so'
+	no file '/usr/local/lib/lua/5.1/lua_ip.so'
+	no file '/usr/local/gateway/luajit/lib/lua/5.1/lua_ip.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	header_filter_by_lua:8: in function <header_filter_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 14:31:46 [error] 2454#0: *4 failed to run set_by_lua*: set_by_lua:3: attempt to index local 'file1' (a nil value)
+stack traceback:
+	set_by_lua:3: in function <set_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 14:31:46 [error] 2454#0: *4 failed to run header_filter_by_lua*: header_filter_by_lua:8: module 'lua_ip' not found:
+	no field package.preload['lua_ip']
+	no file '/usr/local/gateway/site/lualib/lua_ip.lua'
+	no file '/usr/local/gateway/site/lualib/lua_ip/init.lua'
+	no file '/usr/local/gateway/lualib/lua_ip.lua'
+	no file '/usr/local/gateway/lualib/lua_ip/init.lua'
+	no file './lua_ip.lua'
+	no file '/usr/local/gateway/luajit/share/luajit-2.1.0-beta2/lua_ip.lua'
+	no file '/usr/local/share/lua/5.1/lua_ip.lua'
+	no file '/usr/local/share/lua/5.1/lua_ip/init.lua'
+	no file '/usr/local/gateway/luajit/share/lua/5.1/lua_ip.lua'
+	no file '/usr/local/gateway/luajit/share/lua/5.1/lua_ip/init.lua'
+	no file '/usr/local/gateway/site/lualib/lua_ip.so'
+	no file '/usr/local/gateway/lualib/lua_ip.so'
+	no file './lua_ip.so'
+	no file '/usr/local/lib/lua/5.1/lua_ip.so'
+	no file '/usr/local/gateway/luajit/lib/lua/5.1/lua_ip.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	header_filter_by_lua:8: in function <header_filter_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 18:02:27 [error] 2454#0: *5 failed to run set_by_lua*: set_by_lua:3: attempt to index local 'file1' (a nil value)
+stack traceback:
+	set_by_lua:3: in function <set_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 18:02:27 [error] 2454#0: *5 failed to run header_filter_by_lua*: header_filter_by_lua:11: attempt to index local 'file1' (a nil value)
+stack traceback:
+	header_filter_by_lua:11: in function <header_filter_by_lua:1>, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 18:06:02 [error] 3564#0: *1 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=LISTSTATUS&user.name=hdfs, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:37:17 [error] 3564#0: *4 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=LISTSTATUS&user.name=hdfs, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:38:16 [error] 3564#0: *7 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=CREATE&user.name=hdfs, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=CREATE HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:38:32 [error] 3564#0: *9 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=CREATE&user.name=hdfs, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=CREATE HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:38:59 [error] 3564#0: *11 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=CREATE&user.name=hbase, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=CREATE HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:39:02 [error] 3564#0: *12 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=CREATE&user.name=hdfs, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=CREATE HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:39:18 [error] 3564#0: *14 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=CREATE&user.name=hdfs, client: 192.168.1.152, server: , request: "GET /gateway/hdfs/webhdfs/v1/hbase/data?op=CREATE HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:41:35 [error] 3564#0: *16 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=LISTSTATUS&user.name=hdfs, client: 192.168.1.152, server: , request: "PUT /gateway/hdfs/webhdfs/v1/hbase/data?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:41:52 [error] 3564#0: *19 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data/1.txt?op=LISTSTATUS&user.name=hdfs, client: 192.168.1.152, server: , request: "PUT /gateway/hdfs/webhdfs/v1/hbase/data/1.txt?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:42:06 [error] 3564#0: *21 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data/1.txt?op=LISTSTATUS&user.name=hdfs, client: 192.168.1.152, server: , request: "PUT /gateway/hdfs/webhdfs/v1/hbase/data/1.txt?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:42:29 [error] 3564#0: *23 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=CREATE&user.name=hdfs, client: 192.168.1.152, server: , request: "PUT /gateway/hdfs/webhdfs/v1/hbase/data?op=CREATE HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:42:29 [error] 3564#0: *23 [lua] header_filter_by_lua:27: #####encrypted: http://p3:50075/webhdfs/v1/hbase/data?op=CREATE&user.name=hdfs&namenoderpcaddress=mycluster&overwrite=false while reading response header from upstream, client: 192.168.1.152, server: , request: "PUT /gateway/hdfs/webhdfs/v1/hbase/data?op=CREATE HTTP/1.1", upstream: "http://192.168.1.170:50070/webhdfs/v1/hbase/data?op=CREATE&user.name=hdfs", host: "192.168.1.152:8002"
+2017/11/09 19:42:48 [error] 3564#0: *25 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data/1.txt?op=LISTSTATUS&user.name=hdfs, client: 192.168.1.152, server: , request: "PUT /gateway/hdfs/webhdfs/v1/hbase/data/1.txt?op=LISTSTATUS HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:42:58 [error] 3564#0: *27 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data/1.txt?op=DELETE&user.name=hdfs, client: 192.168.1.152, server: , request: "DELETE /gateway/hdfs/webhdfs/v1/hbase/data/1.txt?op=DELETE HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:43:21 [error] 3564#0: *29 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data/1.txt?op=CREATE&user.name=hdfs, client: 192.168.1.152, server: , request: "PUT /gateway/hdfs/webhdfs/v1/hbase/data/1.txt?op=CREATE HTTP/1.1", host: "192.168.1.152:8002"
+2017/11/09 19:43:21 [error] 3564#0: *29 [lua] header_filter_by_lua:27: #####encrypted: http://p1:50075/webhdfs/v1/hbase/data/1.txt?op=CREATE&user.name=hdfs&namenoderpcaddress=mycluster&overwrite=false while reading response header from upstream, client: 192.168.1.152, server: , request: "PUT /gateway/hdfs/webhdfs/v1/hbase/data/1.txt?op=CREATE HTTP/1.1", upstream: "http://192.168.1.170:50070/webhdfs/v1/hbase/data/1.txt?op=CREATE&user.name=hdfs", host: "192.168.1.152:8002"
+2017/11/09 19:44:49 [error] 3564#0: *35 [lua] set_by_lua:7: -------str: http://192.168.1.170:50070/webhdfs/v1/hbase/data/1.txt?op=DELETE&user.name=hdfs, client: 192.168.1.152, server: , request: "DELETE /gateway/hdfs/webhdfs/v1/hbase/data/1.txt?op=DELETE HTTP/1.1", host: "192.168.1.152:8002"

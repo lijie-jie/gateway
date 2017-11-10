@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>观数科技-登录</title>
+    <!-- Bootstrap3 -->
+    <link  href="../resources/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link  rel="stylesheet" href="../resources/lib/jquery.validator.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../resources/css/base.css">
+    <!-- <link rel="stylesheet" href="../resources/css/login.css"> -->
+</head>
+  <body>
+    <div class="navbar violet">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="javascript:;" data-url='**.html'><img src="../resources/img/logo.png"></a>
+        </div>
+      </div>
+    </div>
+    <form class="form"  method="post" id="form1" action="123456">
+      <div class="loginBox">
+        <div class="loginUser">
+          <div class="prompt">
+            <div class="promptactive">
+              信息有误，请重新输入
+            </div>
+          </div>
+          <div class="loguser" id="loguser">
+            <p class="clearfix username"><i></i><input type="text" name="user" data-rule="required;username" placeholder="请输入用户名"></p>
+            <p class="clearfix password"><i></i><input type="password" name="pwd" data-rule="required;password" placeholder="请输入密码"></p>
+	  <label class="radio-inline">
+		<input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> HDFS
+	    </label>
+	    <label class="radio-inline">
+		<input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> HBASE
+	    </label>
+          </div>
+	  <a href="javascript:;" class="btn js-submit">登 录</a>
+        </div>
+      </div>
+    </form>
+    <script src="https://validator.niceue.com/releases/1.1.1/dist/local/zh-CN.js"></script>
+    <script src="../resources/lib/jquery.js"></script>
+    <script src="../resources/lib/jquery.validator.min.js?local=zh-CN"></script>
+    <script type="text/javascript">
+    $(document).on('click','.js-submit',function(){
+	
+     var selectedColor = $('#loguser input:radio:checked').val();
+
+    if(selectedColor=="option1"){
+     document.getElementById("form1").action="http://192.168.1.152:8001/"; 
+    }
+    else{ 
+    document.getElementById("form1").action="http://192.168.1.152:8005/";
+        }
+	document.getElementById("form1").submit();
+      });
+    </script>
+  </body>
+</html>
